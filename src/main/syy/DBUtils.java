@@ -10,7 +10,7 @@ public class DBUtils {
 
 	String driver = "com.mysql.jdbc.Driver";
 	String url = "jdbc:mysql://localhost:3306/people?useUnicode=true&useSSL=false&characterEncoding=utf8";
-
+	System.err.println("11111");
 	Connection con = null;
 	ResultSet res = null;
 
@@ -19,15 +19,15 @@ public class DBUtils {
 			Class.forName(driver);
 			con = DriverManager.getConnection(url, "root", "root");
 		} catch (ClassNotFoundException e) {
-			System.err.println("×°ÔØ JDBC/ODBC Çý¶¯³ÌÐòÊ§°Ü¡£");
+			System.err.println("×°ï¿½ï¿½ JDBC/ODBC ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü¡ï¿½");
 			e.printStackTrace();
 		} catch (SQLException e) {
-			System.err.println("ÎÞ·¨Á¬½ÓÊý¾Ý¿â");
+			System.err.println("ï¿½Þ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½");
 			e.printStackTrace();
 		}
 	}
 
-	// ²éÑ¯
+	// ï¿½ï¿½Ñ¯
 	public ResultSet Search(String sql, String str[]) {
 		DataBase();
 		try {
@@ -45,7 +45,7 @@ public class DBUtils {
 		return res;
 	}
 
-	// ÔöÉ¾ÐÞ¸Ä
+	// ï¿½ï¿½É¾ï¿½Þ¸ï¿½
 	public int AddU(String sql, String str[]) {
 		int a = 0;
 		DataBase();
