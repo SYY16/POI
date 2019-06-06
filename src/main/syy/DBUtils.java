@@ -64,4 +64,8 @@ public class DBUtils {
 		return a;
 	}
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a2ee5b1f9dd4aa3665668fa1a58606effd1fe4d9
