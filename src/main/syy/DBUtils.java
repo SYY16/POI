@@ -8,9 +8,9 @@ import java.sql.SQLException;
 
 public class DBUtils {
 
+	//数据库连接驱动
 	String driver = "com.mysql.jdbc.Driver";
 	String url = "jdbc:mysql://localhost:3306/people?useUnicode=true&useSSL=false&characterEncoding=utf8";
-	System.err.println("11111");
 	Connection con = null;
 	ResultSet res = null;
 
